@@ -20,8 +20,8 @@ https://github.com/VikingoK/crm-infinity-dev/assets/71948646/3d379d68-ec7d-44d2-
 ## Instrucciones de Uso
 
 1. Clona este repositorio en tu máquina local.
-2. Instala las dependencias del proyecto ejecutando `npm install` o `yarn install`.
-3. Ejecuta la aplicación utilizando el comando `npm run dev` o `yarn dev`.
+2. Instala las dependencias del proyecto ejecutando `npm install`.
+3. Ejecuta la aplicación utilizando el comando `npm run dev`.
 4. Accede a la aplicación en tu navegador web mediante la URL `http://localhost:3000`.
 
 ## Estructura del Proyecto
