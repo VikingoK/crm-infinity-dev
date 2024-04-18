@@ -15,7 +15,7 @@ https://github.com/VikingoK/crm-infinity-dev/assets/71948646/3d379d68-ec7d-44d2-
 ## Requerimientos
 
 - [Node.js](https://nodejs.org/) instalado en tu sistema.
-- Gestor de paquetes npm o yarn.
+- Gestor de paquetes npm.
 
 ## Instrucciones de Uso
 
