@@ -1,0 +1,11 @@
+.cell {
+    @apply w-1/4 font-medium p-4 align-middle [&:has([role=checkbox])]:pr-0 cursor-pointer;
+}
+
+.cell__important {
+    @apply w-2/5;
+}
+
+.row {
+    @apply border-b transition-colors hover:bg-blue-50 data-[state=selected]:bg-muted cursor-pointer w-full;
+}

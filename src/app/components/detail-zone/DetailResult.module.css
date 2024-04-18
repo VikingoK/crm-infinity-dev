@@ -1,0 +1,3 @@
+.active_tab {
+    @apply data-[state=active]:bg-[#e9ecfb] data-[state=active]:text-[#4564ff];
+}
