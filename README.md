@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Proyecto de Prueba Técnica: Desarrollo Frontend
 
-## Getting Started
+Este repositorio contiene el código desarrollado como parte de una prueba técnica para el puesto de desarrollador Frontend. La prueba consistió en implementar un diseño proporcionado en Figma utilizando Next.js.
 
-First, run the development server:
+## Demostración
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Se ha incluido un video de demostración que muestra el resultado final de la prueba. Puedes ver el video 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+https://github.com/VikingoK/crm-infinity-dev/assets/71948646/3d379d68-ec7d-44d2-b09a-02b5f79f33e2
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Requerimientos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [Node.js](https://nodejs.org/) instalado en tu sistema.
+- Gestor de paquetes npm o yarn.
 
-## Deploy on Vercel
+## Instrucciones de Uso
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clona este repositorio en tu máquina local.
+2. Instala las dependencias del proyecto ejecutando `npm install` o `yarn install`.
+3. Ejecuta la aplicación utilizando el comando `npm run dev` o `yarn dev`.
+4. Accede a la aplicación en tu navegador web mediante la URL `http://localhost:3000`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Estructura del Proyecto
+
+- `/src/app/components`: Contiene los componentes de React utilizados en la aplicación.
+- `/src/app/dashboard/`: Contiene las páginas de Next.js que componen la aplicación.
+- `/src/app/global.css`: Contiene los archivos de estilos CSS en la aplicación.
+- `/src/assets/icons`: Contiene archivos estáticos como imágenes, íconos, etc.
