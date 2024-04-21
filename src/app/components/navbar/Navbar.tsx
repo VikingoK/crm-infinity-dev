@@ -1,10 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbList,
-    BreadcrumbPage,
-} from "@/components/ui/breadcrumb"
+
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -15,8 +10,10 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Fuel, LogOut, User, Users } from "lucide-react";
 
-import { GroupUserIcon, HomeIcon, BellIcon, DotsIcon } from "@/assets/icons"
-import { BellNotificationComponent } from './BellNotification';
+import { GroupUserIcon, HomeIcon, DotsIcon } from "@/assets/icons"
+import { BellNotificationComponent } from "./BellNotification";
+
+import { NavigationComponent } from "@/app/components/navbar"
 
 
 export const NavbarComponent = () => {
@@ -31,13 +28,7 @@ export const NavbarComponent = () => {
                         <span className="text-blue-700 font-normal text-xl">CRM</span>
                     </div>
 
-                    <Breadcrumb className="cursor-pointer">
-                        <BreadcrumbList>
-                            <BreadcrumbItem>
-                                <BreadcrumbPage>Home</BreadcrumbPage>
-                            </BreadcrumbItem>
-                        </BreadcrumbList>
-                    </Breadcrumb>
+                    <NavigationComponent />
                 </section>
 
                 <section className="flex gap-3 items-center">
