@@ -32,20 +32,19 @@ export const NavigationComponent = () => {
 
                 {
                     area.currentArea == 0
-                        ? <BreadcrumbPage>{routes[0].name}</BreadcrumbPage>
+                        ? <BreadcrumbItem>
+                            <BreadcrumbPage>{routes[0].name}</BreadcrumbPage>
+                          </BreadcrumbItem>
                         : routes[0].children.map((route) => (
 
                             (route.id == area.currentArea) &&
-                            <>
-                                <BreadcrumbPage>{routes[0].name}</BreadcrumbPage>
+                            <BreadcrumbItem
+                                key={route.id}
+                            >
+                                <BreadcrumbPage> {routes[0].name} </BreadcrumbPage>
                                 <BreadcrumbSeparator />
-                                <BreadcrumbLink
-                                    key={route.id}
-                                    href="/"
-                                >
-                                   {route.name}
-                                </BreadcrumbLink>
-                            </>
+                                <BreadcrumbLink> {route.name} </BreadcrumbLink>
+                            </BreadcrumbItem>
 
                         ))
                 }
