@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion";
 import { ResultFilterZoneI } from "../interfaces";
-import { FilterZoneSelectionComponent, FilterZoneResultComponent } from "@/app/components";
+import { FilterZoneSelectionComponent, FilterZoneResultComponent } from "@/app/components/filter-zone";
 
 interface Props {
     className: string;

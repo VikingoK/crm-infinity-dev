@@ -18,7 +18,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input";
 import { Filter } from "lucide-react";
 
-import { SelectFilterComponent} from "@/app/components";
+import { SelectFilterComponent} from "@/app/components/filter-zone";
 
 export const FilterZoneSelectionComponent = () => {
     return (

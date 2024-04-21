@@ -1,5 +1,5 @@
 import { LayoutBoderComponent } from "@/app/components/global"
-import { DetailInvestmentComponent } from "@/app/components/branches-detail-zone";
+import { DetailInvestmentComponent } from "@/app/components/areas-detail-zone";
 
 
 interface Props {

@@ -1,5 +1,5 @@
 import { LayoutBoderComponent } from "@/app/components/global"
-import { DetailGuaranteeComponent } from "@/app/components/branches-detail-zone";
+import { DetailGuaranteeComponent } from "@/app/components/areas-detail-zone";
 
 interface Props {
   className: string;

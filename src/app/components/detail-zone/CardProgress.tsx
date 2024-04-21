@@ -22,7 +22,7 @@ export const CardProgressComponent = ({
         <div className={`${className}
         flex flex-col gap-3 border border-gray-300 rounded-lg px-3 py-2`}>
             <span className="text-gray-400 font-medium">{title}</span>
-            <Progress className="bg-[#00bd9d]" value={valueProgress} />
+            <Progress className="bg-[#00BD9D]" value={valueProgress} />
             <div className="flex flex-row justify-between text-2xl">
                 <span className="font-medium">{goodPercentage}%</span>
                 <span className="font-medium text-gray-300">{badPercentage}%</span>

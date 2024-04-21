@@ -1,14 +1,14 @@
 "use client"
-import { useBranchContext } from '@/app/providers/DetailZoneProvider';
+import { useAreaContext } from '@/app/providers/AreaProvider';
 import { Button } from '@/components/ui/button'
 import { ArrowLeft } from 'lucide-react'
 
 export const ButtonBackToHomeComponent = () => {
 
-  const branch = useBranchContext();
+  const branch = useAreaContext();
 
   const setSelectedBranch = () => {
-    branch.setBranch(0)
+    branch.setArea(0)
   }
 
   return (

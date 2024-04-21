@@ -5,7 +5,7 @@ import {
     TableRow,
 } from "@/components/ui/table"
 
-import { RowDetailClientComponent } from "@/app/components"
+import { RowDetailClientComponent } from "@/app/components/detail-zone"
 import { ButtonBackToHomeComponent, TitleSectionComponent } from "@/app/components/global"
 
 

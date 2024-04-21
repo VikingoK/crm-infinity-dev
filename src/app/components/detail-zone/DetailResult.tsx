@@ -8,7 +8,7 @@ import { PaperSuccesfullIcon } from "@/assets/icons/paper-succesful"
 
 import style from "./DetailResult.module.css"
 
-import { DetailClientComponent, CardProgressComponent, CardAreaComponent } from "@/app/components";
+import { DetailClientComponent, CardProgressComponent, CardAreaComponent } from "@/app/components/detail-zone";
 
 
 export const DetailResultComponent = () => {
@@ -67,7 +67,7 @@ export const DetailResultComponent = () => {
                     </Tabs>
                 </div>
             </div>
-            <div className="flex flex-row gap-3 px-3 overflow-x-scroll m-5">
+            <div className="flex flex-row gap-3 px-3 overflow-x-scroll m-5 ml-0">
                 {
                     branchesDetail.map( branch => (
                         <CardAreaComponent
