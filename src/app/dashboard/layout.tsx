@@ -1,4 +1,5 @@
-import { Navbar } from "@/app/components/index";
+import { Navbar } from "@/app/components";
+import { DetailZoneProvider } from "@/app/providers/DetailZoneProvider";
 
 export default function DashboardLayout({
  children
@@ -6,12 +7,14 @@ export default function DashboardLayout({
  children: React.ReactNode;
 }) {
   return (
-    <div className="bg-[#f6f8fb] h-[90dvh]">
-        <Navbar />
+    <DetailZoneProvider>
+      <div className="bg-[#f6f8fb] h-[90dvh]">
+          <Navbar />
 
-        <div className="h-full">
-          {children}
-        </div>
-    </div>
+          <div className="h-full">
+            {children}
+          </div>
+      </div>
+    </DetailZoneProvider>
   );
 }

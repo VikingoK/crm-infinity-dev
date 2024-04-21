@@ -8,7 +8,7 @@ import {
     TableRow,
 } from "@/components/ui/table"
 
-import { RowDetailClientComponent } from "@/app/components/index";
+import { RowDetailClientComponent } from "@/app/components";
 
 export const DetailClientComponent = () => {
 
@@ -75,7 +75,6 @@ export const DetailClientComponent = () => {
                                 <TableCell>
                                     <RowDetailClientComponent label={"Plazo(Volumen)"} value={"99.999.999 Gal"} />
                                 </TableCell>
-                                <TableCell></TableCell>
                             </TableRow>
                             <TableRow className="border-b border-white">
                                 <TableCell>

@@ -1,5 +1,5 @@
-export { NavbarComponent as Navbar } from "./navbar/Navbar";
 
+export { NavbarComponent as Navbar } from "./navbar/Navbar";
 
 export { CardAreaComponent } from "./detail-zone/CardArea";
 export { CardProgressComponent } from "./detail-zone/CardProgress";

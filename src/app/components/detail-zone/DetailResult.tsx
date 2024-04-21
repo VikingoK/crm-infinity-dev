@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 import { MoneyIcon } from "@/assets/icons/money"
@@ -7,10 +8,16 @@ import { PaperSuccesfullIcon } from "@/assets/icons/paper-succesful"
 
 import style from "./DetailResult.module.css"
 
-import { DetailClientComponent, CardProgressComponent, CardAreaComponent } from "@/app/components/index";
+import { DetailClientComponent, CardProgressComponent, CardAreaComponent } from "@/app/components";
 
 
 export const DetailResultComponent = () => {
+
+    const branchesDetail = [
+        { id: 1, title: "Inversión", icon: <MoneyIcon /> },
+        { id: 2, title: "Garantías", icon: <PaperIcon /> },
+        { id: 3, title: "Aprobación", icon: <PaperSuccesfullIcon />},
+    ];
 
     return (
         <section>
@@ -24,8 +31,12 @@ export const DetailResultComponent = () => {
                     PDS Estación calle 84
                 </h2>
                 <div className="flex flex-col gap-2 items-end">
-                    <Badge className=" bg-[#e7fcf8] text-[#00bd9d] hover:bg-[#00e3bc] hover:text-green-100 cursor-pointer">Activo</Badge>
-                    <Badge className="bg-[#5e79ff] text-white hover:bg-blue-700 hover:text-white cursor-pointer">Ver cartera</Badge>
+                    <Badge className=" bg-[#e7fcf8] text-[#00bd9d] hover:bg-[#00e3bc] hover:text-green-100 cursor-pointer">
+                        Activo
+                    </Badge>
+                    <Button className="bg-[#5e79ff] text-white hover:bg-blue-700 hover:text-white rounded-full">
+                        Ver cartera
+                    </Button>
                 </div>
             </div>
             <div className="flex flex-row justify-between px-3">
@@ -57,9 +68,16 @@ export const DetailResultComponent = () => {
                 </div>
             </div>
             <div className="flex flex-row gap-3 px-3 overflow-x-scroll m-5">
-                <CardAreaComponent icon={<MoneyIcon />} title={"Inversión"} />
-                <CardAreaComponent icon={<PaperIcon />} title={"Garantías"} />
-                <CardAreaComponent icon={<PaperSuccesfullIcon />} title={"Aprobación"} />
+                {
+                    branchesDetail.map( branch => (
+                        <CardAreaComponent
+                            key={branch.id}
+                            id={branch.id}
+                            icon={branch.icon}
+                            title={branch.title}
+                        />
+                    ) )
+                }
             </div>
             <DetailClientComponent />
             <div className="h-[50px]">&nbsp;</div>

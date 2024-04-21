@@ -1,5 +1,7 @@
+"use client"
+import { motion } from "framer-motion";
 import { ResultFilterZoneI } from "../interfaces";
-import { FilterZoneSelectionComponent, FilterZoneResultComponent } from "@/app/components/index";
+import { FilterZoneSelectionComponent, FilterZoneResultComponent } from "@/app/components";
 
 interface Props {
     className: string;
@@ -119,13 +121,17 @@ export const FilterZoneComponent = ({ className }: Props) => {
     ];
 
     return (
-        <div className={className}>
+        <motion.div
+            initial={{ opacity: 0, y: 0, x: 10}}
+            animate={{ opacity: 1, y: 0, x: 0 }}
+            className={className}
+        >
             <div className="w-full h-full p-5">
                 <div className="w-full h-full rounded-md pt-10 px-5 bg-white">
                     <FilterZoneSelectionComponent />
                     <FilterZoneResultComponent results={resultFilterZone} />
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }

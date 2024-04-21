@@ -1,4 +1,6 @@
-import { DetailResultComponent } from "@/app/components/index";
+import { DetailResultComponent } from "@/app/components";
+import { LayoutBoderComponent } from "@/app/components/global"
+
 
 interface Props {
     className: string;
@@ -6,12 +8,13 @@ interface Props {
 
 export const DetailZoneComponent = ({ className }: Props) => {
     return (
-    <div className={className}>
-        <div className="w-full h-[850px] border-l border-gray-300 p-5">
-            <div className="w-full h-full rounded-md overflow-y-scroll border border-gray-300">
-                <DetailResultComponent />
-            </div>
-        </div>
-    </div>
-  )
+        <LayoutBoderComponent
+            className={className}
+            initial={{ opacity: 0, y: 0, x: -10}}
+            animate={{ opacity: 1, y: 0, x: 0 }}
+            transition={{ duration: 0.2 }}
+        >
+            <DetailResultComponent />
+        </LayoutBoderComponent>
+    )
 }
