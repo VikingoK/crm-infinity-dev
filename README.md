@@ -7,8 +7,8 @@ Este repositorio contiene el código desarrollado como parte de una prueba técn
 Se ha incluido un video de demostración que muestra el resultado final de la prueba. Puedes ver el video 
 
 
+https://github.com/VikingoK/crm-infinity-dev/assets/71948646/6bd90cc9-0dba-4f53-a5fe-0508fdef2dd0
 
-https://github.com/VikingoK/crm-infinity-dev/assets/71948646/3d379d68-ec7d-44d2-b09a-02b5f79f33e2
 
 
 
