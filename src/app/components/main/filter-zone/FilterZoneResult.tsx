@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label"
 import { Progress } from "@/components/ui/progress"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 
-import { ResultFilterZoneI } from "../interfaces";
+import { ResultFilterZoneI } from "../../interfaces";
 import style from "./FilterZoneResult.module.css"
 
 

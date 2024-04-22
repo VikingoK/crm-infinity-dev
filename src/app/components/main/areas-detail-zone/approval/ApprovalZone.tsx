@@ -1,4 +1,4 @@
-import { DetailApprovalComponet } from "@/app/components/areas-detail-zone";
+import { DetailApprovalComponet } from "@/app/components/main/areas-detail-zone";
 import { LayoutBoderComponent } from "@/app/components/global";
 
 interface Props {

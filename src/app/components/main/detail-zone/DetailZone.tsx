@@ -1,4 +1,4 @@
-import { DetailResultComponent } from "@/app/components/detail-zone";
+import { DetailResultComponent } from "@/app/components/main/detail-zone";
 import { LayoutBoderComponent } from "@/app/components/global"
 
 

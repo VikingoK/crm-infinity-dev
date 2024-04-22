@@ -1,8 +1,8 @@
 "use client"
 
-import { DetailZoneComponent } from "@/app/components/detail-zone";
-import { FilterZoneComponent } from "@/app/components/filter-zone";
-import { ApprovalZoneComponent, GuaranteeZoneComponent, InvestmentZoneComponent } from "@/app/components/areas-detail-zone";
+import { DetailZoneComponent } from "@/app/components/main/detail-zone";
+import { FilterZoneComponent } from "@/app/components/main/filter-zone";
+import { ApprovalZoneComponent, GuaranteeZoneComponent, InvestmentZoneComponent } from "@/app/components/main/areas-detail-zone";
 import { useAreaContext } from "@/app/providers/AreaProvider";
 
 

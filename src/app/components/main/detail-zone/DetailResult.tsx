@@ -8,12 +8,13 @@ import { PaperSuccesfullIcon } from "@/assets/icons/paper-succesful"
 
 import style from "./DetailResult.module.css"
 
-import { DetailClientComponent, CardProgressComponent, CardAreaComponent } from "@/app/components/detail-zone";
+import { DetailClientComponent, CardProgressComponent, CardAreaComponent } from "@/app/components/main/detail-zone";
+import Link from "next/link"
 
 
 export const DetailResultComponent = () => {
 
-    const branchesDetail = [
+    const AreasDetail = [
         { id: 1, title: "Inversión", icon: <MoneyIcon /> },
         { id: 2, title: "Garantías", icon: <PaperIcon /> },
         { id: 3, title: "Aprobación", icon: <PaperSuccesfullIcon />},
@@ -34,9 +35,14 @@ export const DetailResultComponent = () => {
                     <Badge className=" bg-[#e7fcf8] text-[#00bd9d] hover:bg-[#00e3bc] hover:text-green-100 cursor-pointer">
                         Activo
                     </Badge>
-                    <Button className="bg-[#5e79ff] text-white hover:bg-blue-700 hover:text-white rounded-full">
-                        Ver cartera
-                    </Button>
+                    <Link
+                        href="/dashboard/wallet"
+                    >
+                        <Button
+                            className="bg-[#5e79ff] text-white hover:bg-blue-700 hover:text-white rounded-full">
+                            Ver cartera
+                        </Button>
+                    </Link>
                 </div>
             </div>
             <div className="flex flex-row justify-between px-3">
@@ -69,12 +75,12 @@ export const DetailResultComponent = () => {
             </div>
             <div className="flex flex-row gap-3 px-3 overflow-x-scroll m-5 ml-0">
                 {
-                    branchesDetail.map( branch => (
+                    AreasDetail.map( area => (
                         <CardAreaComponent
-                            key={branch.id}
-                            id={branch.id}
-                            icon={branch.icon}
-                            title={branch.title}
+                            key={area.id}
+                            id={area.id}
+                            icon={area.icon}
+                            title={area.title}
                         />
                     ) )
                 }

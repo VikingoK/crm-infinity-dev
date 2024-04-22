@@ -5,7 +5,7 @@ import {
     TableRow,
 } from "@/components/ui/table"
 
-import { RowDetailClientComponent } from "@/app/components/detail-zone"
+import { RowDetailClientComponent } from "@/app/components/main/detail-zone"
 import { Button } from "@/components/ui/button"
 import { SquareArrowOutUpRight } from "lucide-react"
 

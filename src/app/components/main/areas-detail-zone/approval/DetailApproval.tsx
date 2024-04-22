@@ -6,7 +6,7 @@ import {
     TableRow,
 } from "@/components/ui/table"
 
-import { RowDetailClientComponent } from "@/app/components/detail-zone"
+import { RowDetailClientComponent } from "@/app/components/main/detail-zone"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
 
